@@ -10,8 +10,7 @@ module.exports = {
     path: path.resolve(__dirname, '../dist'),
     filename: 'index.js',
     library: 'q_validation',
-    libraryTarget: 'umd',
-    libraryExport: 'default'
+    libraryTarget: 'umd'
   },
   plugins: [
     new webpack.optimize.UglifyJsPlugin({

@@ -1,6 +1,6 @@
 {
   "name": "q_validation",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "这是一个验证组件",
   "main": "dist/index.js",
   "scripts": {
