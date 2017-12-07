@@ -77,19 +77,19 @@ export default {
 };
 </script>
 
-<style lang="less" scoped>
+<style scoped>
 .verification-box {
   width: 100%;
-  // height: 56px;
   box-sizing: border-box;
   border-radius: 28px;
   margin-bottom: 15px;
   position: relative;
   overflow: hidden;
   background-color: rgba(88, 79, 96, 0.498039215686275);
-  iframe {
-    display: block;
-  }
+  
+}
+iframe {
+  display: block;
 }
 .verification-box.fixBox .mask {
   width: 100%;

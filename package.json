@@ -8,7 +8,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dongasai/d_cascader.git"
+    "url": "git+https://github.com/QSJuan/validation.git"
+    
   },
   "keywords": [
     "验证",
@@ -17,9 +18,9 @@
   "author": "juan1217",
   "license": "BSD-2-Clause",
   "bugs": {
-    "url": "https://github.com/dongasai/d_cascader/issues"
+    "url": "https://github.com/QSJuan/validation/issues"
   },
-  "homepage": "https://github.com/dongasai/d_cascader#readme",
+  "homepage": "https://github.com/QSJuan/validation#readme",
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules --config=./build/webpack.vue.config.js"
   },

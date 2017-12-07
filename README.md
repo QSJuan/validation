@@ -1,15 +1,7 @@
 <p align="center">
-  一个灵活的级联选择器
+  验证组件
 </p>
 
-<p align="center">
-  <br>
-  <b>生命不息，轮子不止</b>
-  <br>
-  <a href="https://www.2xso.com">
-  哇塞悲哀的博客
-  </a>
-</p>
 https://www.npmjs.com/package/d_cascader
 # d_cascader
 
@@ -18,7 +10,7 @@ https://www.npmjs.com/package/d_cascader
 ## Installation
 
 ```javascript
-npm install d_cascader --save
+npm install q_validation --save
 ```
 ## Usage
 **Register component**
