@@ -2,10 +2,10 @@
   验证组件
 </p>
 
-https://www.npmjs.com/package/d_cascader
+https://www.npmjs.com/package/q_validation
 # d_cascader
 
- 这里是[文档](https://github.com/dongasai/d_cascader#readme)
+ 这里是[文档](https://github.com/package/q_validation#readme)
 
 ## Installation
 
@@ -18,18 +18,18 @@ npm install q_validation --save
 Registe global component:
 
 ```javascript
-import d_cascader from 'd_cascader'
+import q_validation from 'q_validation'
 
-Vue.component('d_cascader', d_cascader)
+Vue.component('q_validation', q_validation)
 ```
 
 Registe component:
 
 ```javascript
-import d_cascader from 'd_cascader'
+import q_validation from 'q_validation'
 
 export default {
-  components: { d_cascader }
+  components: { q_validation }
 }
 ```
 
@@ -38,66 +38,8 @@ export default {
 Basic:
 
 ```html
-<d_cascader :cdate="citylist" > 
-</d_cascader>
+<q_validation v-model="img_captcha" :url="url" :appid="appid" :operation="operation"></q_validation>
 ```
 ```javascript
-var     citylist=[
-  {
-    id:"0",
-    name:"名字-0"，
-    unid："0"
-  },{
-    id:"1",
-    name:"名字-1"，
-    unid："0"
-  },
-  {
-    id:"2",
-    name:"名字-2"，
-    unid："1"
-  }
-  ,
-  {
-    id:"3",
-    name:"名字-3"，
-    unid："1"
-  }
-];
-```
 
-
-Default Value:
-
-```html
-<v-distpicker :cdate="citylist" :de_value="devalue">
-</v-distpicker>
-```
-```javascript
-var     citylist=[
-  {
-    id:"0",
-    name:"名字-0"，
-    unid："0"
-  },{
-    id:"1",
-    name:"名字-1"，
-    unid："0"
-  },
-  {
-    id:"2",
-    name:"名字-2"，
-    unid："1"
-  }
-  ,
-  {
-    id:"3",
-    name:"名字-3"，
-    unid："1"
-  }
-];
-
-var de_value=[
-  0,3
-];
 ```
