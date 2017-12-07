@@ -15,6 +15,7 @@
 <script>
 
 export default {
+  name:"q_validation",
   data() {
     return {
       fixBox: false,
