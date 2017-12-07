@@ -3,7 +3,7 @@
 </p>
 
 https://www.npmjs.com/package/q_validation
-# d_cascader
+# q_validation
 
  这里是[文档](https://github.com/package/q_validation#readme)
 
