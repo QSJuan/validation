@@ -15,9 +15,9 @@
 <script>
 
 export default {
-  name:"q_validation",
   data() {
     return {
+      debug_url:"//192.168.9.119:8082/index.html",
       fixBox: false,
       boxHeight: 56,
       img_captcha:''
@@ -26,11 +26,20 @@ export default {
   props: {
     url : {
         type: String,
-        defalut : '//192.168.9.119:8082/index.html'
+        default : "verification.2xso.com/index.html"
     },
-    appid : Number,
-    operation : Number,
-    value : {}
+    appid : {
+      type: Number,
+      required: true
+    },
+    operation : {
+      type: Number,
+      required: true
+    },
+    value : {},
+    debug:{
+      type : Boolean
+    }
   },
   methods: {
       updateCaptcha(){
@@ -39,7 +48,9 @@ export default {
   },
   components: {},
   created() {
-
+    if(this.debug){
+      this.url = this.debug_url
+    }
     //组件创建完成
     window.addEventListener(
       "message",
@@ -87,11 +98,10 @@ export default {
   position: relative;
   overflow: hidden;
   background-color: rgba(88, 79, 96, 0.498039215686275);
-  
 }
 iframe {
-  display: block;
-}
+    display: block;
+  }
 .verification-box.fixBox .mask {
   width: 100%;
   height: 100vh;
