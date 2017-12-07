@@ -38,7 +38,8 @@ export default {
     },
     value : {},
     debug:{
-      type : Boolean
+      type : Boolean,
+      default : false
     }
   },
   methods: {
